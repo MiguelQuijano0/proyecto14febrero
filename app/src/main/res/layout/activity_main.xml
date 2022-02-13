@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/rosa"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_above="@id/corazon"
+        android:layout_marginBottom="-119dp"
+        android:text="@string/pregunta"
+        android:textColor="#010737"
+        android:textSize="24dp"
+        />
+
+    <ImageView
+        android:id="@+id/corazon"
+        android:layout_width="357dp"
+        android:layout_height="449dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/corazon3d" />
+
+    <ImageButton
+        android:id="@+id/imbt1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/corazon"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="12dp"
+        android:onClick="yes"
+        android:src="@drawable/si" />
+
+    <ImageButton
+        android:id="@+id/imbt2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/corazon"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="40dp"
+        android:onClick="no"
+        android:src="@drawable/no" />
+
+</RelativeLayout>
